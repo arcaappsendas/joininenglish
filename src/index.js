@@ -17,8 +17,10 @@ webApp.use(express.json());
 const PORT = process.env.PORT;
 
 
-
-
+webApp.get('/', (req, res) =>
+{
+    res.send(`Hello World.!`);
+});
 
 //PARA FUNCIONAR
 webApp.post('/cedula', async (req, res) =>
